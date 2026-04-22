@@ -28,7 +28,7 @@ from threading import Thread
 RSS_URL       = "https://ncanews.it/feed/"
 CHECK_EVERY   = 5          # minuti tra un controllo e l'altro
 SEEN_FILE     = "seen_articles.json"
-SERVICE_ACCOUNT_FILE = "firebase-service-account.json"  # scarica da Firebase Console
+SERVICE_ACCOUNT_FILE = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "/etc/secrets/firebase-service-account.json")
 # ──────────────────────────────────────────────────────────────────
 
 logging.basicConfig(
