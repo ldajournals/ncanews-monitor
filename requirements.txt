@@ -1,0 +1,4 @@
+feedparser
+firebase-admin
+schedule
+flask
